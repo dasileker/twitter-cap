@@ -147,6 +147,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
+    rack-mini-profiler (2.3.1)
+      rack (>= 1.2.0)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (6.1.2)
@@ -258,28 +260,29 @@ DEPENDENCIES
   bootstrap
   bullet
   byebug
-  capybara
+  capybara (>= 3.26)
   chromedriver-helper
   coffee-rails
-  factory_bot_rails (~> 6.1)
+  factory_bot_rails
   ffaker
   font-awesome-rails
-  jbuilder
-  listen
+  jbuilder (~> 2.7)
+  listen (~> 3.3)
   net-http-persistent
   pg
-  puma
-  rails
+  puma (~> 5.0)
+  rack-mini-profiler (~> 2.0)
+  rails (~> 6.1.2)
   rspec-rails
-  sass-rails
+  sass-rails (>= 6)
   selenium-webdriver
   spring
   spring-watcher-listen
-  sqlite3
-  turbolinks
+  sqlite3 (~> 1.4)
+  turbolinks (~> 5)
   tzinfo-data
   uglifier
-  web-console
+  web-console (>= 4.1.0)
   webdrivers
 
 RUBY VERSION
