@@ -42,9 +42,11 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Reduces boot times through caching; required in config/boot.rb
+
 gem 'activerecord-reset-pk-sequence'
+# Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+
 gem 'bootstrap', '~> 4.5'
 gem 'font-awesome-rails'
 
