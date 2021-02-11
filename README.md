@@ -35,6 +35,11 @@ The functionality to follow/unfollow is very intuitive. '+' buttons to follow cl
 
 [Project Presentation]()
 
+
+## Button to deploy in heroku 
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## Getting Started
 
 You can get a local copy of the repository please run the following commands on your terminal:
