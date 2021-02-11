@@ -255,7 +255,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-reset-pk-sequence
-  bootsnap (>= 1.4.4)
+  bootsnap (>= 1.1.0)
   bootstrap
   bullet
   byebug
