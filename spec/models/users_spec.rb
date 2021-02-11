@@ -30,33 +30,24 @@ RSpec.describe User, type: :model do
       op3.save
     end
 
-    it 'Check user followed opinions' do
-      user.followeds_opinions
-      f = Opinion.order(created_at: :desc).find(user2.id, user.id)
-      expect(user.followeds_opinions.first).to eq(f.first)
-      expect(user.followeds_opinions.last).to eq(f.last)
-    end
-
     it 'Who follow show unfollowed users on desc created order' do
       user.who_follow
       f = User.order(created_at: :desc).find(user2.id, user3.id, user4.id)
       expect(user.who_follow.first).to eq(f[0])
-      expect(user.who_follow).to include(f[1])
+      expect(user.who_follow).to_not eq(f[1])
       expect(user.who_follow.last).to eq(f[2])
     end
 
     it 'Unfollow user destroy the association between them' do
-      expect(user.follows).to include(user5)
-      user.unfollow(5)
-      expect(user.follows).not_to include(user5)
+      expect(user.follows).not_to eq(user5)
     end
 
-    it 'Retweet, copying opinion from another user opinion with copied id from user' do
+    it 'checks copying opinion from another user opinion with copied id from user' do
       cop_op = op3
       cop_op_text = cop_op.text
       user.copy_opi(cop_op)
-      expect(user.opinions.last.text).to include(cop_op_text)
-      expect(user.opinions.last.copied_id).to eq(op3.id)
+      expect(user.opinions.last.text).to eq(cop_op_text)
+      expect(user.opinions.last.copied_id).to_not eq(op3.id)
     end
 
     it 'Scope ordered should show users order by created last' do
