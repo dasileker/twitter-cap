@@ -243,7 +243,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  bootsnap (~> 1.7, >= 1.7.2)
+  bootsnap (>= 1.1.2)
   bootstrap
   bullet
   byebug
