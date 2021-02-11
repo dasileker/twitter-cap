@@ -6,7 +6,7 @@ ruby '2.7.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.2'
 # Use sqlite3 as the database for Active Record
-gem 'pg', '~> 1.1'
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -24,14 +24,14 @@ gem 'jbuilder', '~> 2.7'
 gem 'coffee-rails'
 gem 'uglifier'
 
-gem 'net-http-persistent'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
+# gem 'bootsnap', '>= 1.4.4'
 
-gem 'activerecord-reset-pk-sequence'
+gem 'bootsnap', '~> 1.7', '>= 1.7.2', require: false
+
 
 gem 'bootstrap'
 gem 'font-awesome-rails'
@@ -40,7 +40,6 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails'
-  gem 'ffaker'
 end
 
 group :development do
@@ -62,7 +61,6 @@ group :test do
   gem 'rspec-rails'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
-  gem 'chromedriver-helper'
   gem 'webdrivers'
 end
 
