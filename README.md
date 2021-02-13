@@ -35,6 +35,9 @@ The functionality to follow/unfollow is very intuitive. '+' buttons to follow cl
 
 [Project Presentation](https://www.loom.com/share/035dfe197f1b44d18f32b719da7191ff)
 
+## Video Presentation Redo
+
+[Project Presentation](https://www.loom.com/share/4535b01ed93745e78fc454d3eed3e497)
 
 ## Button to deploy in heroku 
 
